@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        .hover-grow:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-[#6B01D7]-500 to-blue-500 text-white font-sans">
+    <div class="max-w-4xl mx-auto py-12 px-4">
+        <header class="text-center mb-12 animate-fadeInUp">
+            <h1 class="text-4xl font-bold mb-4">Hey, I'm MakSON<span class="text-yellow-400">👋</span></h1>
+            <h2 class="text-2xl font-semibold mb-2">Frontend Developer</h2>
+            <p class="text-lg">I'm a frontend developer based in Myanmar. I'll help you build beautiful websites your users will love.</p>
+            <div class="mt-4">
+                <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">
+                    Get In Touch
+                </button>
+                <button class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded ml-2 transition duration-300 ease-in-out transform hover:scale-105">
+                    Browse Projects
+                </button>
+            </div>
+        </header>
+
+        <section class="mb-12 animate-fadeInUp">
+            <h3 class="text-3xl font-bold mb-6">Projects.</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover-grow hover:bg-purple-100 cursor-pointer">
+                    <img src="img/2682353448cab04dad697342bc54b638.jpg" alt="TaskFlow" class="w-full h-48 object-cover mb-4">
+                    <h4 class="text-xl font-semibold mb-2">TaskFlow</h4>
+                    <p>Task management system with drag-and-drop, real-time collaboration, and responsive layout.</p>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover-grow hover:bg-purple-100 cursor-pointer">
+                    <img src="img/8d204701b5161dc3fd04a09a5763e821.jpg" alt="Cafe POS System" class="w-full h-48 object-cover mb-4">
+                    <h4 class="text-xl font-semibold mb-2">Cafe POS System</h4>
+                    <p>A point-of-sale system designed for cafes, featuring order management, payment integration, and sales tracking.</p>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover-grow hover:bg-purple-100 cursor-pointer">
+                    <img src="img/56d4bc3cc9e71a2c7c7742aa0abf5d0f.jpg" alt="EventPlanner" class="w-full h-48 object-cover mb-4">
+                    <h4 class="text-xl font-semibold mb-2">EventPlanner</h4>
+                    <p>Event planning web application, enabling users to organize and manage events effortlessly.</p>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover-grow hover:bg-purple-100 cursor-pointer">
+                    <img src="img/3d8d0775c9eb985e5d3f30a7194eb14a.jpg" alt="FoodieFinder" class="w-full h-48 object-cover mb-4">
+                    <h4 class="text-xl font-semibold mb-2">FoodieFinder</h4>
+                    <p>Modern-looking restaurant discovery platform featuring real-time search, reviews, and ratings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 animate-fadeInUp">
+            <h3 class="text-3xl font-bold mb-6">Experience.</h3>
+            <ul>
+                <li class="mb-4">
+                    <h4 class="text-xl font-semibold">Engineer @ Apple</h4>
+                    <p class="text-sm text-gray-400">May 2022 - Present</p>
+                    <ul class="list-disc ml-6">
+                        <li>Developed and shipped highly interactive web applications for Apple Music using Ember.js.</li>
+                        <li>Built and shipped the Apple Music extension within Facebook Messenger leveraging third-party and internal APIs.</li>
+                        <li>Contributed extensively to MusicKit.js, a JavaScript framework that allows developers to add an Apple Music player to their web apps.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="animate-fadeInUp">
+            <h3 class="text-3xl font-bold mb-6">Skills.</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-2">Web Design</h4>
+                    <ul class="list-disc ml-6">
+                        <li>UI/UX Design</li>
+                        <li>Responsive Design</li>
+                        <li>Wireframing</li>
+                        <li>User Research</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-2">Frontend</h4>
+                    <ul class="list-disc ml-6">
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-2">Backend</h4>
+                    <ul class="list-disc ml-6">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Firebase</li>
+                        <li>Vercel</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-2">Soft Skills</h4>
+                    <ul class="list-disc ml-6">
+                        <li>Effective Communication</li>
+                        <li>Collaboration</li>
+                        <li>Commitment</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
